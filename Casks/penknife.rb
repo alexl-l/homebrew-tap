@@ -1,6 +1,6 @@
 cask "penknife" do
-  version "1.7"
-  sha256 "8535596478ba713ca2af3a219ff6020a501ef4d3d1990213e91ddb6642cb85d1"
+  version "1.8"
+  sha256 "ab450ffc1e5af3885827b99a8136318cbb153f28914fd435492b3c6426846118"
 
   url "https://github.com/alexl-l/penknife/releases/download/v#{version}/Penknife-#{version}.zip"
   name "Penknife"
@@ -28,5 +28,11 @@ cask "penknife" do
     Penknife is not notarized by Apple. The first time, open it once, then go to
     System Settings → Privacy & Security and click "Open Anyway".
     Later versions update from the app (menu → Check for Updates…).
+
+    No "Open Anyway", or the warning keeps coming back? On Macs managed by a
+    company or school a profile may block apps that aren't notarized. Remove the
+    "downloaded from the internet" mark and open Penknife again (on a work Mac,
+    check with your IT team first):
+      xattr -dr com.apple.quarantine /Applications/Penknife.app
   EOS
 end
