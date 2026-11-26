@@ -1,6 +1,6 @@
 cask "penknife" do
-  version "1.20"
-  sha256 "a21362e02331391f08ce4d303bec9a8a10dccce03675360d002d413902424454"
+  version "1.21"
+  sha256 "4b6459ecdef9beacfd914aab16cbb26154502d56a144b80132c6159f65c325d3"
 
   url "https://github.com/alexl-l/penknife/releases/download/v#{version}/Penknife-#{version}.zip"
   name "Penknife"
